@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Golden Shell Signs Ltd.</title>
+	<meta name="description" content="Blueprint: A responsive product grid layout with touch-friendly Flickity galleries and Isotope-powered filter functionality." />
+	<meta name="keywords" content="blueprint, template, layout, grid, responsive, products, store, filter, isotope, flickity" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Font Awesome -->
+
+	<!-- Pixel Fabric clothes icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/pixelfabric-clothes/style.css" />
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	 <!-- Flickity gallery styles -->
+	<link rel="stylesheet" type="text/css" href="css/flickity.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Bottom bar with filter and cart info -->
+	<div class="bar">
+		<div class="filter">
+			<span class="filter__label">Filter: </span>
+			<button class="action filter__item filter__item--selected" data-filter="*">All</button>
+			<button class="action filter__item" data-filter=".jackets"><i class="icon icon--jacket"></i><span class="action__text">Jackets</span></button>
+			<button class="action filter__item" data-filter=".shirts"><i class="icon icon--shirt"></i><span class="action__text">Shirts</span></button>
+			<button class="action filter__item" data-filter=".dresses"><i class="icon icon--dress"></i><span class="action__text">Dresses</span></button>
+			<button class="action filter__item" data-filter=".trousers"><i class="icon icon--trousers"></i><span class="action__text">Trousers</span></button>
+			<button class="action filter__item" data-filter=".shoes"><i class="icon icon--shoe"></i><span class="action__text">Shoes</span></button>
+		</div>
+		<button class="cart">
+			<i class="cart__icon fa fa-shopping-cart"></i>
+			<span class="text-hidden">Shopping cart</span>
+			<span class="cart__count">0</span>
+		</button>
+	</div>
+	<!-- Main view -->
+	<div class="view">
+		<!-- Blueprint header -->
+		
+		<!-- Grid -->
+		<section class="grid grid--loading">
+			<!-- Loader -->
+			<img class="grid__loader" src="images/grid.svg" width="60" alt="Loader image" />
+			<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
+			<div class="grid__sizer"></div>
+			<!-- Grid items -->
+			<div class="grid__item shirts grid__item--size-a">
+				<div class="slider">
+					<div class="slider__item"><img src="images/Rollup.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/Rollup1.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Economy Roll Up</h3>
+					<span class="meta__brand"></span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes shirts">
+				<div class="slider">
+					<div class="slider__item"><img src="images/table_x_stand1.png" alt="Table X-stand" /></div>
+					<div class="slider__item"><img src="images/table_x_stand2.png" alt="Table X-stand" /></div>
+					<div class="slider__item"><img src="images/table_x_stand.png" alt="Table X-stand" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Table X-stand</h3>
+					<span class="meta__brand"></span>
+					<span class="meta__price">$25</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item dresses">
+				<div class="slider">
+					<div class="slider__item"><img src="images/uv_printing.png" alt="UV Printing" /></div>
+					<div class="slider__item"><img src="images/uv_printing1.png" alt="UV Printing" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">UV Printing</h3>
+					<span class="meta__brand">PVC / Coroplastic / Foam Board / Magnet</span>
+					<span class="meta__price"></span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item--size-a shirts">
+				<div class="slider">
+					<div class="slider__item"><img src="images/flim_printing.png" alt="flim" /></div>
+					<div class="slider__item"><img src="images/flim_printing1.png" alt="flim" /></div>
+                    <div class="slider__item"><img src="images/flim_printing2.png" alt="flim" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Flim Printing</h3>
+					<span class="meta__brand"></span>
+					<span class="meta__price"></span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+            <div class="grid__item grid__item--size-a shirts">
+				<div class="slider">
+					<div class="slider__item"><img src="images/website.png" alt="Website" /></div>
+					<div class="slider__item"><img src="images/website1.png" alt="Website" /></div>
+                    <div class="slider__item"><img src="images/website2.png" alt="Website" /></div>
+                    <div class="slider__item"><img src="images/website3.png" alt="Website" /></div>
+                    <div class="slider__item"><img src="images/website4.png" alt="Website, Yorktech" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Website</h3>
+					<span class="meta__brand"></span>
+					<span class="meta__price">Please Contact Us</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers ">
+				<div class="slider">
+					<div class="slider__item"><img src="images/apron.png" alt="apron" /></div>
+					<div class="slider__item"><img src="images/apron1.png" alt="apron" /></div>
+					<div class="slider__item"><img src="images/apron2.png" alt="apron" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Custom Apron</h3>
+					<span class="meta__brand">Embroidery your logo on the Apron</span>
+					<span class="meta__price">$27</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+		</section>
+		<!-- /grid-->
+	</div>
+	<!-- /view -->
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

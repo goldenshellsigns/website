@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+	<script src='http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js?v=2.1.9'></script>
+	<script src="js/index.js"></script>
+    
+  </head>
+
+  <body>
+
+    <div class="controls">
+  <label>Filter:</label>
+  
+  <button class="filter" data-filter="all">All</button>
+  <button class="filter" data-filter=".Signs">Signs</button>
+  <button class="filter" data-filter=".Display">Display</button>
+  <button class="filter" data-filter=".Website">Website</button>
+  <button class="filter" data-filter=".Design">Design</button>
+  
+  <label>Sort:</label>
+  
+  <button class="sort" data-sort="myorder:asc">Asc</button>
+  <button class="sort" data-sort="myorder:desc">Desc</button>
+</div>
+<div id="Container" class="container">
+  <!----------------------Rollup--------------------------->
+  <div class="mix Signs Display" data-myorder="1">
+  	<a href="images/Rollup.png" data-lightbox="roadtrip">
+  	<img src="images/Rollup.png" alt="Rollup" />
+    </a>
+  </div>
+  
+  <div class="mix Signs Display" data-myorder="2">
+  	<img src="images/Rollup1.png" alt="Rollup" />
+  </div>
+  <!----------------------Rollup-END----------------------->
+  
+  <script src="js/lightbox.js"></script>
+  
+  <div class="gap"></div>
+  <div class="gap"></div>
+</div>
+
+
+    
+    
+    
+  </body>
+</html>
